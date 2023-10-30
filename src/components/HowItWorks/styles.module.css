@@ -1,0 +1,57 @@
+.container {
+  padding: 40px 150px;
+  background-color: #eee;
+}
+
+.container :global .caroussel>button {
+  display: block;
+}
+
+.heading {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 40px 0;
+}
+
+.caroussel-content {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.card_container {
+  display: flex;
+  align-items: center;
+}
+
+.img_div {
+  flex:1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.instruction_div {
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.desc {
+  width: 50%;
+  text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    padding: 10px 10px 40px;
+  }
+
+  .card_container {
+    flex-direction: column;
+  }
+
+  .img_div {
+    justify-content: center;
+  }
+
+}

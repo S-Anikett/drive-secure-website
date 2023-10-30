@@ -1,0 +1,44 @@
+.container {
+    width: 90%;
+    padding: 60px;
+
+    @media screen and (max-width: 780px) {
+        width: unset;
+    }
+}
+
+.heading {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.features_container {
+    padding: 40px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #fff;
+
+    @media screen and (max-width: 780px) {
+        flex-direction: column;
+        gap: 40px
+    }
+
+}
+
+.feature {
+    flex: 1;
+    padding: 0 24px;
+}
+
+.feature_title {
+    margin-top: 16px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.feature_desc {
+    margin-top: 16px;
+    font-size: 14px;
+    color: #808080;
+}

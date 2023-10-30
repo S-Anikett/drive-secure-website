@@ -1,0 +1,100 @@
+.container {
+    height: 70vh;
+    background-image: url("../../assets/home2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    padding-top: 30vh;
+}
+
+.content{ 
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-size:44px;
+    text-align: start;
+    width: 70%;
+
+    @media screen and (max-width: 780px) {
+        width: 80%;
+    }
+
+}
+
+.app_name {
+    font-weight: bold;
+}
+
+.app_slogan {
+    font-size: 36px;
+}
+
+.app_desc {
+    margin-top: 20px;
+    text-align: start;
+    font-size: 16px;
+}
+
+.button_div {
+    width: 70%;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+
+    @media screen and (max-width: 780px) {
+        width: 80%;
+    }
+    
+}
+
+.button_desc {
+    margin: 40px 0 16px;
+    font-size: 12px;
+    color: #525252;
+}
+
+.button {
+    background-color: #fff;
+    text-decoration: none;
+    color: #000;
+    padding: 12px 24px;
+    width: 32%;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transition: 0.5s;
+
+    @media screen and (max-width: 780px) {
+        width: 100%;
+        gap: 8px;
+        padding: 12px 12px;
+    }
+}
+
+.button:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.mobile_png {
+    flex: 1;
+
+    @media screen and (max-width: 780px) {
+        display: none;
+    }
+}
+
+.mobile_image {
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    width: 40%;
+}

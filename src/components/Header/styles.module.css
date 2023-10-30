@@ -1,0 +1,55 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 20px 12px;
+    border-bottom: 1px solid #eee;
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    z-index: 100;
+}
+
+.logo_container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    @media screen and (max-width: 900px) {
+        justify-content: flex-start;
+    }
+}
+
+.logo {
+    height: 36px;
+    border-radius: 8px;
+}
+
+.logo_title {
+    font-size: 20px;
+    font-weight: 1000 !important;
+}
+
+.navigation_container {
+    flex: 4;
+    display: flex;
+    justify-content: flex-end;
+
+    @media screen and (max-width: 780px) {
+        display: none;
+    }
+}
+
+.nav_item {
+    width:18%;
+    color: #000;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.nav_item_active {
+    font-weight: bold;
+    color: #fde74d;
+}
